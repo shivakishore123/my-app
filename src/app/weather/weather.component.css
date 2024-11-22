@@ -1,0 +1,43 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    padding: 20px;
+    width: 30%;
+    height: 60%;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+.temp{
+    text-align: center;
+    color: orange;
+    font-weight: 700;
+    font-size: 40px;
+}
+.dot {
+    width: 30px;           /* Width of the dot */
+    height: 30px;          /* Height of the dot */
+    border-radius: 50%;    /* Makes the element a circle */
+    /* border: 1px solid black; */
+    margin-left: 43%;
+                               /* Background color of the dot */
+  }
+  .red{
+    background-color: red;
+  }
+  .yellow{
+    background-color: yellow;
+  }
+  .blue{
+    background-color: rgb(112, 58, 173);
+  }
+  .wea{
+    color: rgb(55, 41, 136);
+  }
+  

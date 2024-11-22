@@ -1,0 +1,16 @@
+.parent{
+    width: 30%;
+    height: 40%;
+    background-color: white;
+    padding: 20px;
+    margin-left: 30%;
+
+}
+.child{
+    display: flex;
+    /* flex-direction: column; */
+}
+button{
+    margin: 10px;
+    background-color: darkcyan;
+}

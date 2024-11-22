@@ -1,0 +1,21 @@
+<p>rectangle works!</p>
+<div class="parent">
+    <h3>Rectangle</h3>
+    
+    <div class="child">
+        <label for="">Length:</label>
+        <input type="number" [(ngModel)]="Length">
+        <br>
+        <label for="">Breadth:</label>
+        <input type="number"[(ngModel)]="Breadth">
+    </div>
+  
+    <div>
+        <button (click)="area()">Area</button>
+        <button (click)="perimeter()">Perimeter</button>
+        
+    </div>
+    <h4>Area of Rectangle is : {{result}}</h4>
+    <h4>Perimeter of Rectangle is : {{result1}}</h4>
+    
+</div>    

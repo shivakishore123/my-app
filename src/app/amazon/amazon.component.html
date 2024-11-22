@@ -1,0 +1,12 @@
+<h1>Amazon</h1>
+
+<div class="parent">
+    <div class="child" *ngFor="let amazon of amazon">
+         
+             <img class="pics" src="{{amazon.image}}" alt="" >     
+             <h6>{{amazon.rating.rate}}</h6>
+             <h2>{{amazon.category}}</h2>
+             <p>{{amazon.title}}</p>
+             <h3>Rs.{{amazon.price}}</h3>
+    </div>
+</div>

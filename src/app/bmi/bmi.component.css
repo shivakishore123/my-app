@@ -1,0 +1,44 @@
+.parent{
+    width: 95%;
+    height: 95%;
+    background-color: orangered;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    width: 95%;
+    height:95%;
+    background-color: white;
+    display: flex;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bmi{
+    width: 80%;
+    height: 70%;
+    background-color: gray;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+button{
+    padding: 10px;
+    background-color: blue;
+    border: 0;
+    margin: 10px;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    background-color: wheat;
+    
+}

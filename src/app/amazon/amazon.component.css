@@ -1,0 +1,33 @@
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.child{
+    height: 60% ;
+    width: 23%;
+    border: 2px solid red;
+    background-color: white;
+    padding: 10px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+p{
+    color: blue;
+}
+h3{
+    color: red;
+}
+
+.pics{
+    width: 75%;
+    height: 40%;
+}
+h6{
+    background-color: gray;
+    width: fit-content;
+}

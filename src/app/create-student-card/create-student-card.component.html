@@ -1,0 +1,23 @@
+<p>create-student-card works!</p>
+
+<form [formGroup]="studentform">
+<label for="" >Name:</label>
+<input type="text" formControlName="name">
+<br>
+<label for="">Phone:</label>
+<input type="text" formControlName="phone">
+<br>
+<label for="" >DOB:</label>
+<input type="text" formControlName="dob">
+<br>
+<label for="" >City:</label>
+<input type="text" formControlName="city">
+<br>
+<label for="" >Email:</label>
+<input type="text" formControlName="email">
+<br>
+<label for="" >Profile_pic:</label>
+<input type="text" formControlName="profilepic">
+<br>
+<button (click)="submit()">submit</button>
+</form>

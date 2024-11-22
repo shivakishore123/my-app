@@ -1,0 +1,62 @@
+<p>student-card works!</p>
+<input type="text" placeholder="search" [(ngModel)]="term" (keyup)="filter()" >
+
+<label for="">column:</label>
+<select name="" [(ngModel)]="column">
+    <option value="name">Name</option>
+    <option value="city">City</option>
+</select>
+<label for="">order:</label>
+<select [(ngModel)]="order">
+    <option >asc</option>
+    <option >desc</option>
+</select>
+<button (click)="sort()" class="btn btn-warning">Sort</button>
+
+<label for="">Limit:</label>
+<select [(ngModel)]="limit">
+    <option >5</option>
+    <option >10</option>
+    <option >20</option>
+</select>
+<label for="">Page:</label>
+<select [(ngModel)]="page">
+    <option >1</option>
+    <option >2</option>
+    <option >3</option>
+    <option >4</option>
+    <option >5</option>
+</select>
+<button (click)="pagination()" class="btn btn-warning">Pagination</button>
+
+<div class="parent">
+    <div class="child" *ngFor="let card of cards">
+        <div class="top">
+            <img class="logo" src="{{card.school_logo}}" alt="">
+            <h2>{{card.school_name}}</h2>
+        </div>
+        <div class="middle">
+                <div class="left">
+                    <h6>Name: {{card.name}}</h6>
+                    <h6>Phone: {{card.phone}}</h6>
+                    <h6>DOB: {{card.dob}}</h6>
+                    <h6>City: {{card.city}}</h6>
+                    <h6>EMAIL: {{card.email}}</h6>
+                </div>
+                <div class="right">
+                    <img class="profilepic" src="{{card.profile_picture}}" alt="">
+                </div>
+        </div>
+        <div class="bottom">
+            <div class="pin">
+                <h6>City: {{card.school_city}}</h6>
+                <h6>Pin: {{card.school_pin}}</h6>
+            </div>
+            <div class="btns">
+                <button id="b1" class="btn btn-dark">View</button>
+                <button id="b2" class="btn btn-primary">Edit</button>
+                <button id="b3" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

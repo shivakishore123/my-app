@@ -1,0 +1,33 @@
+<p>databinding works!</p>
+
+
+<!-- Interpolation -->
+
+<h1>my age is {{age}}</h1>
+<h1>my name is {{name}}</h1>
+<h1>is indian: {{isIndian}}</h1>
+
+<!-- property binding -->
+ <button [disabled]="isInvalid">submit</button>
+
+ <!-- Event Binding -->
+  <button (click)="create()">create</button>
+
+  <input type="text" (keyup)="typing()">
+
+  <!-- Two Way Data Binding -->
+   <input type="text" [(ngModel)]="phone">
+
+   <!-- ===================== -->
+
+   <h1>Calculator</h1>
+   <label for="">num1:</label>
+   <input type="number"[(ngModel)]="num1">
+   <br>
+   <label for="">num2:</label>
+   <input type="number"[(ngModel)]="num2">
+   <br>
+   <button [disabled]="!num1 || !num2" (click)="sum()">sum</button>
+   <button [disabled]="!num1 || !num2"  (click)="mul()">mul</button>
+
+   <h1>{{result}}</h1>

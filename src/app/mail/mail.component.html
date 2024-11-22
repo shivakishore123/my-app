@@ -1,0 +1,7 @@
+<p>mail works!</p>
+
+<p *ngFor="let mail of mails" [ngClass]="{'red':mail.completed==true,'black':mail.completed==false}">
+    {{mail.id}}
+    {{mail.title}}
+</p>
+

@@ -1,0 +1,13 @@
+<p>images works!</p>
+
+<div class="parent">
+    <div class="child" *ngFor="let image of images">
+        <img class="pics" src="{{image.download_url}}" alt="">
+        <p class="author">{{image.author}}</p>
+       <button class="btn">
+        <a href="{{image.download_url}}" target="_blank" class="button">download</a>
+       </button> 
+    </div>
+    
+</div>
+  

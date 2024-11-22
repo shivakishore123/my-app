@@ -1,0 +1,25 @@
+.parent{
+    width: 30%;
+    height: 40%;
+    background-color: white;
+    padding: 20px;
+    margin-left: 30%;
+    box-shadow: 5px 5px gray;
+
+}
+.child{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    background-color: rgb(162, 44, 191);
+    margin: 10px;
+    border: 0;
+    padding: 10px;
+
+}
+h3{
+    color: black;
+    display: flex;
+    text-align: center;
+}
