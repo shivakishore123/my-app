@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AccountsComponent } from '../accounts/accounts.component';
 import { FormControl, FormGroup } from '@angular/forms';
 import { AccountsService } from '../accounts.service';
+import { StudentCardService } from '../student-card.service';
 
 @Component({
   selector: 'app-create-student-card',
@@ -10,7 +11,7 @@ import { AccountsService } from '../accounts.service';
 })
 export class CreateStudentCardComponent {
 
-  constructor(private _accounts:AccountsService) {}
+  constructor(private _studentcards:StudentCardService) {}
 
   public studentform:FormGroup = new FormGroup(
     {
@@ -19,16 +20,19 @@ export class CreateStudentCardComponent {
       dob: new FormControl(),
       city: new FormControl(),
       email: new FormControl(),
-      profilepic: new FormControl(),
+      profile_picture: new FormControl(),
+      school_city: new FormControl(),
+      school_pin: new FormControl(),
+      school_name: new FormControl(),
     },
   )
   submit(){
     console.log(this.studentform);
 
-    this._accounts.createaccounts(this.studentform.value).subscribe(
-      (data:any)=>{
-        alert("created successfully!!!");
-      },
+    this._studentcards.createcards(this.studentform.value).subscribe(
+      (data: any)=>{
+      alert("created successfully!!!");
+    },
       (err:any)=>{
         alert("not created");
       }

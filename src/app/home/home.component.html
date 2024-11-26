@@ -1,1 +1,127 @@
 <p>home works!</p>
+
+
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+
+<br><br>
+<div matBadge="69" matBadgeOverlap="false" class="demo-section">Text with a badge</div>
+
+<div matBadge="1" matBadgeSize="medium" class="demo-section">Text with large badge</div>
+
+<div class="demo-section">
+Button with a badge on the left
+<button mat-raised-button color="primary"
+    matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+  Action
+</button>
+</div>
+
+<div class="demo-section">
+  Button toggles badge visibility
+  <button mat-raised-button matBadge="7" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
+      Hide
+  </button>
+</div>
+
+<div class="demo-section">
+Icon with a badge
+<mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+  <!-- Include text description of the icon's meaning for screen-readers -->
+  <span class="cdk-visually-hidden">
+    Example with a home icon with overlaid badge showing the number 15
+  </span>
+</div>
+
+<p>You have received a file called "cat-picture.jpeg".</p>
+
+<button mat-raised-button (click)="openBottomSheet()">Open file</button>
+
+<br><br>
+
+<button mat-raised-button>Basic</button>
+    <button mat-raised-button color="primary">Primary</button>
+    <button mat-raised-button color="accent">Accent</button>
+    <button mat-raised-button color="warn">Warn</button>
+    <button mat-raised-button disabled>Disabled</button>
+    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+    <br><br>
+    <!-- <mat-icon>favorite</mat-icon> -->
+    <div class="example-label">Icon</div>
+    <div class="example-button-row">
+      <div class="example-flex-container">
+        <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+          <mat-icon>home</mat-icon>
+        </button>
+        <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
+          <mat-icon>open_in_new</mat-icon>
+        </button>
+      </div>
+    </div>
+
+<br><br>
+    <section>
+        <div class="example-label">FAB</div>
+        <div class="example-button-row">
+          <div class="example-flex-container">
+            <div class="example-button-container">
+              <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </div>
+            <div class="example-button-container">
+              <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+                <mat-icon>bookmark</mat-icon>
+              </button>
+            </div>
+            <div class="example-button-container">
+              <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+                <mat-icon>home</mat-icon>
+              </button>
+            </div>
+            <div class="example-button-container">
+              <button mat-fab disabled aria-label="Example icon button with a heart icon">
+                <mat-icon>favorite</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+
+<br><br>
+
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+            <mat-button-toggle value="bold">Bold</mat-button-toggle>
+            <mat-button-toggle value="italic">Italic</mat-button-toggle>
+            <mat-button-toggle value="underline">Underline</mat-button-toggle>
+          </mat-button-toggle-group>
+          
+
+          <h3>Single selection</h3>
+<mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color">
+  <mat-button-toggle value="red">Red</mat-button-toggle>
+  <mat-button-toggle value="green">Green</mat-button-toggle>
+  <mat-button-toggle value="blue">Blue</mat-button-toggle>
+</mat-button-toggle-group>
+
+<h3>Multiple selection</h3>
+<mat-button-toggle-group name="ingredients" aria-label="Ingredients" multiple>
+  <mat-button-toggle value="flour">Flour</mat-button-toggle>
+  <mat-button-toggle value="eggs">Eggs</mat-button-toggle>
+  <mat-button-toggle value="sugar">Sugar</mat-button-toggle>
+</mat-button-toggle-group>
+
+<br><br>
+
+<mat-card>
+    <mat-card-content>Simple card</mat-card-content>
+  </mat-card>
+  
+

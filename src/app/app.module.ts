@@ -34,6 +34,19 @@ import { ReateVehicleComponent } from './reate-vehicle/reate-vehicle.component';
 import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
 import { StudentCardComponent } from './student-card/student-card.component';
 import { CreateStudentCardComponent } from './create-student-card/create-student-card.component';
+import { UserProfilesComponent } from './user-profiles/user-profiles.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { DummyDisplayComponent } from './dummy-display/dummy-display.component';
+import {MatButtonModule} from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatCardModule} from '@angular/material/card';
+import { CreateUserComponent } from './create-user/create-user.component';
+
+
 
 @NgModule({
   declarations: [
@@ -66,14 +79,25 @@ import { CreateStudentCardComponent } from './create-student-card/create-student
     ReateVehicleComponent,
     CreateAccountsComponent,
     StudentCardComponent,
-    CreateStudentCardComponent
+    CreateStudentCardComponent,
+    UserProfilesComponent,
+    DummyDisplayComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatBadgeModule,
+    MatBottomSheetModule,
+    MatButtonModule,
+    MatIconModule,
+    MatButtonToggleModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
