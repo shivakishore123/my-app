@@ -45,6 +45,7 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatCardModule} from '@angular/material/card';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 
 
@@ -82,7 +83,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
     CreateStudentCardComponent,
     UserProfilesComponent,
     DummyDisplayComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    StudentDetailsComponent
   ],
   imports: [
     BrowserModule,

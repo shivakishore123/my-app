@@ -31,6 +31,7 @@ import { CreateStudentCardComponent } from './create-student-card/create-student
 import { UserProfilesComponent } from './user-profiles/user-profiles.component';
 import { DummyDisplayComponent } from './dummy-display/dummy-display.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -62,7 +63,8 @@ const routes: Routes = [
     {path:'create-student-card',component:CreateStudentCardComponent},
     {path:'user-profiles',component:UserProfilesComponent},
     {path:'dummy-display',component:DummyDisplayComponent},
-    {path:'create-user',component:CreateUserComponent}
+    {path:'create-user',component:CreateUserComponent},
+    {path:'student-details',component:StudentDetailsComponent}
     
   ]
   },
