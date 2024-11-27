@@ -28,6 +28,10 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
 import { StudentCardComponent } from './student-card/student-card.component';
 import { CreateStudentCardComponent } from './create-student-card/create-student-card.component';
+import { UserProfilesComponent } from './user-profiles/user-profiles.component';
+import { DummyDisplayComponent } from './dummy-display/dummy-display.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -56,7 +60,11 @@ const routes: Routes = [
     {path:'create-vehicle',component:CreateVehicleComponent},
     {path:'create-accounts',component:CreateAccountsComponent},
     {path:'student-card',component:StudentCardComponent},
-    {path:'create-student-card',component:CreateStudentCardComponent}
+    {path:'create-student-card',component:CreateStudentCardComponent},
+    {path:'user-profiles',component:UserProfilesComponent},
+    {path:'dummy-display',component:DummyDisplayComponent},
+    {path:'create-user',component:CreateUserComponent},
+    {path:'student-details',component:StudentDetailsComponent}
     
   ]
   },
