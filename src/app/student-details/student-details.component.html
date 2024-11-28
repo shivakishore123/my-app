@@ -17,10 +17,10 @@
     <input type="text" formControlName="dob">
     <br>
     <div formGroupName="address">
-        <label for="">AddressLine:</label>
+        <label>AddressLine:</label>
         <input type="text" formControlName="addressLine">
         <br>
-        <label for="">City:</label>
+        <label>City:</label>
         <input type="text" formControlName="city">
         <br>
         <label for="">State:</label>
@@ -29,7 +29,7 @@
         <label for="">Pincode:</label>
         <input type="text" formControlName="pincode">
         <br>
-
+    </div>
         <label for="">Type:</label>
         <input type="radio" name="type" formControlName="type" value="dayScholar">
         <label for="">Day scholar:</label>
@@ -38,17 +38,17 @@
         <br>
         <!-- (2) -->
         <div *ngIf="userForm.get('type')?.value=='dayScholar'">
-            <label for="">Bus Fee:</label>
+            <label>Bus Fee:</label>
             <input type="number" formControlName="busfee">
             <br>
         </div>
-    
+
         <div *ngIf="userForm.get('type')?.value=='residential'">
-            <label for="">Hostel Fee:</label>
+            <label>Hostel Fee:</label>
             <input type="number" formControlName="hostelFee">
             <br>
         </div>
-    
+
 
         <label for="">Marks:</label>
         <button class="btn btn-info" (click)="addmarks()">Add Marks</button>
@@ -62,18 +62,22 @@
 
                     <label for="">Class:</label>
                     <input type="text" formControlName="class">
+               
                     <br>
                     <label for="">Year:</label>
                     <input type="text" formControlName="year">
                     <br>
                     <label for="">Percentage:</label>
                     <input type="text" formControlName="percentage">
+                    <div *ngIf="marksFormArray.controls[i]?.get('percentage')?.touched && marksFormArray.controls[i]?.get('percentage')?.invalid">
+                        <p class="error" *ngIf="marksFormArray.controls[i]?.get('percentage')?.errors?.['required']">Number is Required</p>
+                    </div>
                     <br>
                     <button class="btn btn-danger" (click)="deletemarks(i)">Delete</button>
                 </div>
             </div>
         </div>
         <button (click)="submit()">Submit</button>
-    </div>
-  
+    
+
 </form>

@@ -32,10 +32,11 @@ import { UserProfilesComponent } from './user-profiles/user-profiles.component';
 import { DummyDisplayComponent } from './dummy-display/dummy-display.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { AuthenticationGuard } from './authentication.guard';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent,children:[
+  {path:'dashboard',canActivate:[AuthenticationGuard], component:DashboardComponent,children:[
     {path:'home',component:HomeComponent},
     {path:'welcome',component:WelcomeComponent},
     {path:'calculate',component:CalculateComponent},

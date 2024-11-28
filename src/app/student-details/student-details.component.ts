@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormArray, FormControl , FormGroup } from '@angular/forms';
+import { FormArray, FormControl , FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-student-details',
@@ -14,11 +14,13 @@ export class StudentDetailsComponent {
       email: new FormControl(),
       dob: new FormControl(),
        address: new FormGroup({
-      addressLine: new FormControl(),
-      city: new FormControl(),
-      state: new FormControl(),
-      pincode: new FormControl(),
+          addressLine: new FormControl(),
+          city: new FormControl(),
+          state: new FormControl(),
+          pincode: new FormControl(),
+          
     }),
+    type:new FormControl(),
     marks: new FormArray([])
   })
 
@@ -31,7 +33,7 @@ export class StudentDetailsComponent {
       new FormGroup({
         class: new FormControl(),
         year: new FormControl(),
-        percentage: new FormControl(),
+        percentage: new FormControl('',[Validators.required]),
       })
     )
   }
